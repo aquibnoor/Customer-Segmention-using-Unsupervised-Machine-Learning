@@ -91,24 +91,24 @@ This project focuses on **customer segmentation** for EastWest Airlines using un
 ---
 
 ## 🗂️ Repository Structure
-Customer-Segmentation-using-Unsupervised-Machine-Learning/
-│
-├── dataset/
-│ └── EastWestAirlines.xlsx
-│
-├── images/
-│ ├── elbow_method.png
-│ ├── kmeans_clustering.png
-│ ├── hierarchical_clustering.png
-│ ├── dbscan_clustering.png
-│ ├── customer_feature_distribution.png
-│ └── outlier_detection_boxplot.png
-│
-├── notebooks/
-│ └── eastwest_airlines_customer_segmentation.ipynb
-│
-├── README.md
-└── requirements.txt
+Customer-Segmentation-using-Unsupervised-Machine-Learning/                                          
+│                                                                                                   
+├── dataset/                                                                                        
+│ └── EastWestAirlines.xlsx                                                                         
+│                                                                                                   
+├── images/                                                                                         
+│ ├── elbow_method.png                                                                              
+│ ├── kmeans_clustering.png                                                                         
+│ ├── hierarchical_clustering.png                                                                   
+│ ├── dbscan_clustering.png                                                                         
+│ ├── customer_feature_distribution.png                                                             
+│ └── outlier_detection_boxplot.png                                                                 
+│                                                                                                   
+├── notebooks/                                                                                      
+│ └── eastwest_airlines_customer_segmentation.ipynb                                                 
+│                                                                                                   
+├── README.m                                                                                        
+└── requirements.txt                                                                                
 
 
 ---
