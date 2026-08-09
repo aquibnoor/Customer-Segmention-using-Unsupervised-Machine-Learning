@@ -1,92 +1,18 @@
-# ✈️ Customer Segmentation using Unsupervised Machine Learning
+# 📊 Customer Segmentation using Unsupervised Machine Learning
 
-## 📌 Project Overview
-This project focuses on **customer segmentation** for EastWest Airlines using unsupervised machine learning techniques. The goal is to identify distinct customer groups based on their behavior and characteristics, enabling better business decision-making and targeted marketing strategies.
-
----
-
-## 🎯 Objectives
-- Perform data preprocessing and cleaning
-- Explore customer behavior through EDA
-- Apply multiple clustering algorithms
-- Evaluate clustering performance
-- Extract meaningful business insights
+This project applies multiple unsupervised machine learning techniques to segment customers based on behavioral and transactional data. The goal is to identify meaningful customer groups for targeted marketing and business insights.
 
 ---
 
-## 🧠 Techniques Used
-- **K-Means Clustering**
-- **Hierarchical Clustering (Agglomerative)**
-- **DBSCAN**
-- **Feature Scaling (StandardScaler)**
-- **Dimensionality Reduction (if applied)**
-- **Silhouette Score for evaluation**
+## 🚀 Project Overview
 
----
+Customer segmentation is performed using:
 
-## 📊 Dataset
-- Dataset: *EastWest Airlines Customer Data*
-- Contains customer-related features such as:
-  - Balance
-  - Qual_miles
-  - Bonus miles
-  - Flight miles
-  - Membership details
+- K-Means Clustering
+- Hierarchical Clustering
+- DBSCAN
 
----
-
-## ⚙️ Workflow
-
-1. Data Loading
-2. Data Cleaning & Preprocessing  
-3. Exploratory Data Analysis (EDA)  
-4. Feature Scaling  
-5. Clustering Model Implementation:
-   - K-Means
-   - Hierarchical Clustering
-   - DBSCAN  
-6. Model Evaluation  
-7. Visualization & Interpretation  
-
----
-
-## 📈 Results
-
-- **K-Means provided the most interpretable clusters**
-- Achieved a **Silhouette Score of ~0.36**, indicating moderate cluster separation
-- DBSCAN struggled due to data density variations
-- Hierarchical clustering provided useful visual insights through dendrograms
-
----
-
-## 📊 Visualizations
-
-### Elbow Method
-![Elbow Method](images/elbow_method.png)
-
-### K-Means Clustering
-![KMeans](images/kmeans_clustering.png)
-
-### Hierarchical Clustering
-![Hierarchical](images/hierarchical_clustering.png)
-
-### DBSCAN Clustering
-![DBSCAN](images/dbscan_clustering.png)
-
-### Feature Distribution
-![Feature Distribution](images/customer_feature_distribution.png)
-
-### Outlier Detection
-![Boxplot](images/outlier_detection_boxplot.png)
-
----
-
-## 💡 Key Insights
-
-- Identified distinct customer segments based on travel and spending behavior
-- High-value customers can be targeted for premium services
-- Low-engagement customers may require retention strategies
-- Clustering helps in designing personalized marketing campaigns
+The dataset contains airline customer information such as balance, miles, transactions, and enrollment details.
 
 ---
 
@@ -110,10 +36,68 @@ Customer-Segmentation-using-Unsupervised-Machine-Learning/
 ├── README.m                                                                                        
 └── requirements.txt                                                                                
 
+---
+
 
 ---
 
-## 🚀 Technologies Used
+## 📊 Data Preprocessing
+
+- Handled missing values
+- Removed low variance features
+- Feature scaling using StandardScaler
+- Outlier detection using boxplots
+
+---
+
+## 📈 Exploratory Data Analysis
+
+### Feature Distribution
+![Feature Distribution](images/customer_feature_distribution.png)
+
+### Outlier Detection
+![Boxplot](images/outlier_detection_boxplot.png)
+
+---
+
+## 🤖 Model Implementation
+
+### 🔹 K-Means Clustering
+
+- Optimal clusters identified using Elbow Method
+
+![Elbow Method](images/elbow_method.png)
+
+![KMeans](images/kmeans_clustering.png)
+
+---
+
+### 🔹 Hierarchical Clustering
+
+- Dendrogram used to determine cluster structure
+
+![Hierarchical](images/hierarchical_clustering.png)
+
+---
+
+### 🔹 DBSCAN
+
+- Density-based clustering for noise detection
+
+![DBSCAN](images/dbscan_clustering.png)
+
+---
+
+## 📊 Results & Insights
+
+- K-Means provided interpretable clusters but moderate separation
+- Hierarchical clustering performed well for structured grouping
+- DBSCAN struggled due to dataset density distribution
+- Silhouette score observed was relatively low (~0.36), indicating overlapping clusters
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -121,14 +105,13 @@ Customer-Segmentation-using-Unsupervised-Machine-Learning/
 - Matplotlib
 - Seaborn
 - Scikit-learn
+- SciPy
 
 ---
 
-## 📌 Conclusion
+## ⚙️ Installation
 
-This project demonstrates how unsupervised learning techniques can be used to uncover hidden patterns in customer data. Despite moderate cluster separation, the models provided actionable insights for business strategy.
-
----
-
-## 🙌 Author
-**Aquib Nooruddeen Shams**
+```bash
+git clone https://github.com/your-username/Customer-Segmentation-using-Unsupervised-Machine-Learning.git
+cd Customer-Segmentation-using-Unsupervised-Machine-Learning
+pip install -r requirements.txt
